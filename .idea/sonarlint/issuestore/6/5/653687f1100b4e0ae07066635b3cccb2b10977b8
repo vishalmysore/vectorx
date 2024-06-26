@@ -1,0 +1,17 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¤ÌÎ´…2J$1f8d5b2c-d267-4498-b2e7-1c6fb5b8994e
+	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$38e7b44a-3358-47a7-be3b-75d2fd01e38c
+	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$73ccea12-7d22-4de8-955d-815465d6c0d9
+	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$61bd828d-3fa3-426c-907f-9b7adb1c69ce
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$3dd3ca54-319b-425b-b218-b0fa332b8ee3
+Š
+java:S20952"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚ÌÆË8¹ÍÎ´…2J$56fdefd2-c917-4500-a1eb-e324ce214199
+—
+java:S2095]"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†‚‹øÿÿÿÿ8œ×´…2J$5a731569-3a58-471e-aa67-76fb44a5ee4f
+r	java:S106<"+Replace this use of System.out by a logger.(âê›úÿÿÿÿ8ÄÍÎ´…2J$6e0b3542-c9ed-4387-84d3-d0aae4b91a22
+m	java:S106D"+Replace this use of System.out by a logger.(©ÿ‘§8ÆÍÎ´…2J$f03b5297-d78d-4ceb-9a61-9dfd780dc607
+l	java:S106z"+Replace this use of System.out by a logger.(±åšO8ÒÍÎ´…2J$cb37374f-f014-455e-8321-aae8879d6630
+
+java:S3012†"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(–€ã´8ÕÍÎ´…2J$c1f5faf3-af53-43d3-a005-9b624e3ced3f
+f
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD8²œ×´…2J$77721796-14f6-488d-8bc7-564d71db2704

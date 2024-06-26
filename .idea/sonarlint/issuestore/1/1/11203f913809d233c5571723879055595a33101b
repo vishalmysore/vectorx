@@ -1,0 +1,18 @@
+
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8³ºÁ‰…2J$169d2420-cd68-4d78-9d56-80ef27232b99
+K
+java:S2115")Add password protection to this database.(Íºã øÿÿÿÿ8“¨º¦…2
+m	java:S106"+Replace this use of System.out by a logger.(†œø»8„¼Á‰…2J$cc4a3e25-9619-4e03-ba14-deb46383b3af
+r	java:S106"+Replace this use of System.out by a logger.(¯”Áûşÿÿÿÿ8†¼Á‰…2J$788ca90e-0d78-4be4-9888-bf983a8dc4f4
+r	java:S106"+Replace this use of System.out by a logger.(ĞÒâ¬úÿÿÿÿ8‡¼Á‰…2J$9d4a9bc1-ee80-4694-b246-660002a35289
+m	java:S106'"+Replace this use of System.out by a logger.(¾İ¡î8‰¼Á‰…2J$7ca4854b-c6d7-49b9-b95b-a7829c81317a
+r	java:S106."+Replace this use of System.out by a logger.(Ëù™ˆÿÿÿÿÿ8‹¼Á‰…2J$85bbadf1-25ee-4290-8fb8-19f049ea7716
+m	java:S1069"+Replace this use of System.out by a logger.(î²ÿ°8Œ¼Á‰…2J$1172ccd0-60de-4049-a6d7-89baf0c17c00
+m	java:S106?"+Replace this use of System.out by a logger.(©éî¾8¼Á‰…2J$23dc2a4c-ab97-4beb-9920-890e0fd96032
+r	java:S106W"+Replace this use of System.out by a logger.(É×¨°øÿÿÿÿ8¼Á‰…2J$54576d43-33a1-4f4d-a9e8-a259ec189e44
+r	java:S106]"+Replace this use of System.out by a logger.(£èŸøÿÿÿÿ8’¼Á‰…2J$f2553cd6-647f-435d-bc3d-5b17fb2e3f4d
+u
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8¡¼Á‰…2J$eb83f2ef-dae6-46e6-a66f-524e0744c85f
+x
+java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8¢¼Á‰…2J$d0923989-7d8e-4f29-9c6c-54a43a9d7398

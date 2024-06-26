@@ -1,0 +1,56 @@
+
+¡
+java:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨«„Äÿÿÿÿÿ8õ”µãƒ2J$a1574b67-1567-4e0a-a59b-3c2e90f9116a
+œ
+java:S2293S"YReplace the type specification in this constructor call with the diamond operator ("<>").(§Û”8ö”µãƒ2J$5f405d61-0313-4033-a244-64183304a4b2
+œ
+java:S2293U"YReplace the type specification in this constructor call with the diamond operator ("<>").(ãÂËÑ8÷”µãƒ2J$cfb6a122-7fd2-4490-9b4a-0301bf12118b
+œ
+java:S2293_"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤òàô8÷”µãƒ2J$eaf26853-b506-49f6-a8bc-957e69bf02b3
+p
+java:S16044"(Make this anonymous inner class a lambda(¸òµùÿÿÿÿ8ş”µãƒ2J$e9007f45-957a-4638-9c9b-d91a6d1db74a
+™
+java:S2095;"QUse try-with-resources or close this "RestHighLevelClient" in a "finally" clause.(³Ò”Øúÿÿÿÿ8¡…ù„„2J$fdb3a4e2-daa4-4405-aaea-ffb25f9a6906
+ƒ	java:S1250"<This block of commented-out lines of code should be removed.(•ÍÄÿÿÿÿÿ8ÑØ„„2J$d83f8164-695c-4ae3-a9d4-c1c6e2170982
+r	java:S106Y"+Replace this use of System.out by a logger.(Ñìşßıÿÿÿÿ8¥–µãƒ2J$90e537b5-ea8f-47f1-8af0-691084205a55
+~	java:S125X"<This block of commented-out lines of code should be removed.(Š–ñ8ÄšÛ…„2J$cf9b31b6-5357-459b-802b-60e48ae577db
+ƒ	java:S125Z"<This block of commented-out lines of code should be removed.(´§¾¦úÿÿÿÿ8ÅšÛ…„2J$895c44eb-29c5-41b0-ac0f-05404855b0df
+m	java:S106c"+Replace this use of System.out by a logger.(ôú´ã8Í–µãƒ2J$17c8a810-33d7-47d2-95f2-707c77b3d544
+r	java:S106d"+Replace this use of System.out by a logger.(‰Àõºûÿÿÿÿ8Ğ–µãƒ2J$0dcdf4cb-af7f-4b3e-bdc0-3810cdc4f81e
+r	java:S106h"+Replace this use of System.out by a logger.(ƒÓ¨ûÿÿÿÿ8Ø–µãƒ2J$bcd86a90-cd4d-4580-bc84-dab33a813dca
+r	java:S106i"+Replace this use of System.out by a logger.(Ú¢Ü¸ûÿÿÿÿ8Ú–µãƒ2J$4b841481-7c4a-4555-b786-a87087815c9d
+m	java:S106m"+Replace this use of System.out by a logger.(Ë·È8ã–µãƒ2J$abbaae6e-5112-48fc-bcdc-8bdb71fba27b
+m	java:S106n"+Replace this use of System.out by a logger.(Æ‚Ó8æ–µãƒ2J$97eb7be4-ab78-4d72-8ea9-9a7e1a0b30c8
+l	java:S106r"+Replace this use of System.out by a logger.(›²á]8‚À…„2J$6f99f10a-3bae-4e68-9825-4207e67f2822
+r	java:S106s"+Replace this use of System.out by a logger.(Å†‹ÿÿÿÿÿ8ÇİÂ…„2J$a24fec96-ba47-421c-9333-cb3514f33f87
+~
+java:S1128";Remove this unused import 'org.apache.http.auth.AuthScope'.(şàıœ8‡†ù„„2J$8314be86-0d88-4e30-8ccd-2757b0a5034e
+
+java:S1128"MRemove this unused import 'org.apache.http.auth.UsernamePasswordCredentials'.(°Š×V8‡†ù„„2J$fc6fe52b-ff79-4f2a-923d-f457c67b3e70
+…
+java:S1128	"BRemove this unused import 'org.apache.http.ssl.SSLContextBuilder'.(ƒ ­8‡†ù„„2J$007176c1-e354-4d6c-9c5b-46b5f85f147c
+
+java:S1128
+"<Remove this unused import 'org.apache.http.ssl.SSLContexts'.(¶Ê§¡8‡†ù„„2J$2ca6445d-01d5-4382-a0d0-7530b761640e
+‘
+java:S1128"NRemove this unused import 'org.opensearch.client.indices.CreateIndexResponse'.(ã­©©8×šÛ…„2J$4b7e42ae-daa1-4964-a8b5-b2063cfd7cf5
+x
+java:S1128"5Remove this unused import 'javax.net.ssl.SSLContext'.(ˆœ¤ë8ˆ†ù„„2J$bea61a7c-8c13-42bb-99d7-ab158e4219b8
+s
+java:S1128 "0Remove this unused import 'java.io.InputStream'.(¹»º8‰†ù„„2J$5cda73af-e911-480c-804d-f89caae37be8
+s
+java:S1128!"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8‰†ù„„2J$7d8f2991-cbaf-4f12-950e-3fb06f887d3d
+r
+java:S1128""/Remove this unused import 'java.nio.file.Path'.(×²êÂ8Š†ù„„2J$3697b7f0-9fbe-4e78-9af2-1f81e859885e
+s
+java:S1128#"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8Š†ù„„2J$472cdefd-29ec-473a-b1d8-3556ab60f048
+‰
+java:S1128$"ARemove this unused import 'java.security.KeyManagementException'.(ë¢ö§ıÿÿÿÿ8Š†ù„„2J$3f1a3ce7-337e-495b-93c0-bec3cba1806d
+u
+java:S1128%"3Remove this unused import 'java.security.KeyStore'.(ïººW8‹†ù„„2J$f33205a1-6168-41f9-bc2e-0b52daee2b3c
+
+java:S1128&"<Remove this unused import 'java.security.KeyStoreException'.(Ë¾¬œ8‹†ù„„2J$074f8860-ae20-4bd2-a2e9-c4cd439d6a9f
+‹
+java:S1128'"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾şÿÿÿÿ8‹†ù„„2J$cbeba16c-e526-4b68-8fce-466f2480ba67
+Œ
+java:S1128("DRemove this unused import 'java.security.cert.CertificateException'.(èÙ¿ùÿÿÿÿ8Œ†ù„„2J$02faf96f-a6b9-4a62-b78e-535501c78d24
