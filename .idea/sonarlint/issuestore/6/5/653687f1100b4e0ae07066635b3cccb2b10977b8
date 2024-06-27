@@ -1,17 +1,27 @@
 
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¤ÌÎ´…2J$1f8d5b2c-d267-4498-b2e7-1c6fb5b8994e
-	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$38e7b44a-3358-47a7-be3b-75d2fd01e38c
-	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$73ccea12-7d22-4de8-955d-815465d6c0d9
-	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$61bd828d-3fa3-426c-907f-9b7adb1c69ce
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥ÌÎ´…2J$3dd3ca54-319b-425b-b218-b0fa332b8ee3
+	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8İ‰Ñ…2J$e0cebd50-7fac-48a7-9475-f2100118e5e8
+	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş‰Ñ…2J$62e92fda-596c-486b-a388-20bfcb1a0950
+	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş‰Ñ…2J$dfd519de-35d4-4b71-bc27-6ea004d5c5d8
+	java:S112r"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş‰Ñ…2J$d0ce6510-9637-4b5c-a266-77e782de95b5
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ß‰Ñ…2J$1c2a02cf-79cb-4c03-b211-4bd721139da0
+	java:S112›"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡ñ–Ñ…2J$a28f08e3-0b36-44ef-aa27-24f5cc217749
 Š
-java:S20952"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚ÌÆË8¹ÍÎ´…2J$56fdefd2-c917-4500-a1eb-e324ce214199
+java:S2095$"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚ÌÆË8ó’‰Ñ…2J$fc27f63c-2df5-490f-91c0-f6d39d84a37e
 —
-java:S2095]"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†‚‹øÿÿÿÿ8œ×´…2J$5a731569-3a58-471e-aa67-76fb44a5ee4f
-r	java:S106<"+Replace this use of System.out by a logger.(âê›úÿÿÿÿ8ÄÍÎ´…2J$6e0b3542-c9ed-4387-84d3-d0aae4b91a22
-m	java:S106D"+Replace this use of System.out by a logger.(©ÿ‘§8ÆÍÎ´…2J$f03b5297-d78d-4ceb-9a61-9dfd780dc607
-l	java:S106z"+Replace this use of System.out by a logger.(±åšO8ÒÍÎ´…2J$cb37374f-f014-455e-8321-aae8879d6630
+java:S2095P"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†‚‹øÿÿÿÿ8ó’‰Ñ…2J$7e9ca5d5-55b0-46f1-8d6f-3789e9c63d99
+
+java:S2095‹"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8ó’‰Ñ…2J$49d1f6c0-2b96-4ed5-9fdd-09a34591649f
+r	java:S106."+Replace this use of System.out by a logger.(âê›úÿÿÿÿ8ü’‰Ñ…2J$9fe70f9b-a1b0-43a2-b8d4-1c3495d2f5f7
+m	java:S1066"+Replace this use of System.out by a logger.(©ÿ‘§8ı’‰Ñ…2J$72208a1d-8c8f-405f-b0c3-0fd9c494a8ce
+l	java:S106m"+Replace this use of System.out by a logger.(±åšO8Š“‰Ñ…2J$f033b6cd-4f24-48d1-861d-8db04a205091
+m	java:S106"+Replace this use of System.out by a logger.(â½§û8“‰Ñ…2J$d6862344-f2a3-4800-a8d7-6ecf5817aafb
+s	java:S106"+Replace this use of System.out by a logger.(äı‡şÿÿÿÿ8““‰Ñ…2J$dc6762fa-3daf-452f-8ed4-4b377d65eb91
+s	java:S106“"+Replace this use of System.out by a logger.(ä”ğøÿÿÿÿ8“‰Ñ…2J$7dd84bc8-d5ec-4e4b-beca-069d76b4d2e4
+s	java:S106•"+Replace this use of System.out by a logger.(¿ˆÖúÿÿÿÿ8Ÿ“‰Ñ…2J$36ab0e6c-ae31-447f-8fbc-835f936d8728
+s	java:S106˜"+Replace this use of System.out by a logger.(ıûëÇÿÿÿÿÿ8Ÿ“‰Ñ…2J$38b87768-469e-48bb-aa5e-fb264d391d8b
 
-java:S3012†"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(–€ã´8ÕÍÎ´…2J$c1f5faf3-af53-43d3-a005-9b624e3ced3f
+java:S3012¤"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(–€ã´8¢“‰Ñ…2J$8e86e04c-fe78-45b7-8d1e-d1da062ae08e
 f
-java:S1128"$Remove this unused import 'java.io'.(¬›ãD8²œ×´…2J$77721796-14f6-488d-8bc7-564d71db2704
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD8§“‰Ñ…2J$0060d437-63cb-43f8-bad0-7013f525bc4e
+x
+java:S1144…"/Remove this unused private "checkIndex" method.(¾ÌÍÖşÿÿÿÿ8§“‰Ñ…2J$7e5eddb1-e54f-466e-87b3-ff20c0bd6e39

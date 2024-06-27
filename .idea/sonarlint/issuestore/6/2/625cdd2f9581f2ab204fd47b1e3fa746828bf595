@@ -1,0 +1,19 @@
+
+	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚¬Ù…2J$82d45ef1-a51f-4e04-8503-81a6267fd37d
+	java:S112I"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒ¬Ù…2J$913d1d23-b219-492d-b039-48fe21b34519
+	java:S112c"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8„¬Ù…2J$10b69e8c-25cb-4483-bc39-9835f5fd51cc
+w
+java:S3740
+"/Provide the parametrized type for this generic.(Á™Èšıÿÿÿÿ8„¬Ù…2J$31ca92de-2284-422b-995d-bd0e8c69baa7
+w
+java:S3740+"/Provide the parametrized type for this generic.(É…ìÇûÿÿÿÿ8…¬Ù…2J$53787c0f-8465-4b66-b650-dc3dc09b9d81
+“	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ò¤Á8†¬Ù…2J$8975e414-3624-4829-864c-e2981c7719e7
+—
+java:S2095W"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†‚‹øÿÿÿÿ8¬é£Ù…2J$5db6d23c-0adf-4d54-a196-451d9fa85cb2
+r	java:S106""+Replace this use of System.out by a logger.(”ö’ÿÿÿÿÿ8¡¬Ù…2J$1cf016d5-a793-46f1-81cb-b284fd4d1c62
+r	java:S106D"+Replace this use of System.out by a logger.(”ö’ÿÿÿÿÿ8¦¬Ù…2J$d9b89761-d1da-4eaf-b034-85be7ac77004
+`
+java:S2119S"Save and re-use this "Random".(¼İÅf8Ú¬Ù…2J$b92b747d-dcd3-4f9c-9d8c-f1e2ba934fac
+m	java:S106a"+Replace this use of System.out by a logger.(ÚÎ†‰8ß¬Ù…2J$5f83ea53-d85b-47b2-ab99-58c27c006b96
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8 ÉŒŞ…2

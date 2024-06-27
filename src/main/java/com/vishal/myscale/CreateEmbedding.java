@@ -13,4 +13,13 @@ public class CreateEmbedding {
         Embedding embedding1 = embeddingModel.embed(segment1).content();
         return embedding1.vector();
     }
+    public static Float[] embedAsObject(String str) {
+        float[] embQuery = embed(str);
+        Float[] embQueryObj = new Float[embQuery.length];
+        for (int i = 0; i < embQuery.length; i++) {
+            embQueryObj[i] = embQuery[i];
+        }
+        return embQueryObj;
+    }
+
 }

@@ -4,31 +4,16 @@ import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.*;
-
-
-        import java.io.BufferedWriter;
-        import java.io.FileReader;
-        import java.io.FileWriter;
-        import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.*;
 import java.util.Arrays;
 
 public class MyScaleDataLoader {
 
-    private Connection connection;
-
-    private void initConnection() {
-        String url = "jdbc:clickhouse://msc-8cdd15a4.us-east-1.aws.myscale.com:443/default?ssl=true";
-        String user = "vishalmysore_org_default";
-        String password = System.getenv("pass");
-        try  {
-            connection = DriverManager.getConnection(url, user, password);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private  void createTable() {
+    public  void createTable() {
 
         String dropTableSQL = "DROP TABLE IF EXISTS default.myscale_cookgpt";
         String createTableSQL = """
@@ -46,6 +31,7 @@ public class MyScaleDataLoader {
                 ORDER BY id
                 """;
         Statement stmt = null;
+        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
         try {
             stmt = connection.createStatement();
         } catch (SQLException e) {
@@ -90,6 +76,7 @@ public class MyScaleDataLoader {
                 VALUES (?, ?, ?, ?, ?, ?, ?)
                 """;
             long id = 1; // Starting id for records
+            Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
             PreparedStatement pstmt = connection.prepareStatement(insertSQL);
             while ((columns = csvReader.readNext()) != null) {
                 // Process each line
@@ -128,6 +115,49 @@ public class MyScaleDataLoader {
         }
     }
 
+    public void createIndex() {
+        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        String alterTableQuery = "ALTER TABLE default.myscale_cookgpt " +
+                "ADD VECTOR INDEX method_feature_index method_feature " +
+                "TYPE MSTG " +
+                "('metric_type=Cosine')";
+
+        try (Statement stmt = connection.createStatement()) {
+            stmt.execute(alterTableQuery);
+            System.out.println("Vector index added successfully.");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void checkIndex() {
+        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+
+        String getIndexStatusQuery = "SELECT status FROM system.vector_indices WHERE name='method_feature_index'";
+
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery(getIndexStatusQuery);
+
+            if (rs.next()) {
+                String status = rs.getString("status");
+                System.out.println("Index build status: " + status);
+
+                if ("Built".equals(status)) {
+                    System.out.println("The vector index is built successfully.");
+                } else {
+                    System.out.println("The vector index is not built yet. Current status: " + status);
+                }
+            } else {
+                System.out.println("No vector index found with the name 'method_feature_index'.");
+            }
+        }catch(Exception e) {
+            throw new RuntimeException(e);
+          }
+
+
+    }
+
     private  Float[] convertToFloatObjectArray(float[] floatArray) {
         Float[] floatObjectArray = new Float[floatArray.length];
         for (int i = 0; i < floatArray.length; i++) {
@@ -141,8 +171,8 @@ public class MyScaleDataLoader {
 
     public static void main(String[] args) {
         MyScaleDataLoader loader = new MyScaleDataLoader();
-        loader.initConnection();
         loader.createTable();
         loader.processRecords();
+        loader.createIndex();
     }
 }

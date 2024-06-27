@@ -25,3 +25,17 @@ d
 4src/main/java/com/vishal/myscale/FileDownloader.java,d\4\d420ebc05f71a330a6edea988431188674d2d52e
 g
 7src/main/java/com/vishal/myscale/MyScaleDataLoader.java,6\5\653687f1100b4e0ae07066635b3cccb2b10977b8
+f
+6src/main/java/com/vishal/myscale/MyScaleDataQuery.java,6\2\625cdd2f9581f2ab204fd47b1e3fa746828bf595
+g
+7src/main/java/com/vishal/myscale/MyScaleConnection.java,b\0\b058904761a866c9038a4c417bb6d68634b15dc2
+U
+%src/main/java/com/vishal/VectorX.java,d\f\df1f31bc28e7af6c89be806526712b867c64c5b7
+_
+/src/main/java/com/vishal/VectorXController.java,e\2\e2da42b054142f37a7b57cb020a745494aaee174
+[
++src/main/java/com/vishal/OpenApiConfig.java,f\3\f3657e0f3846255116c734c5f08359d46eaa556b
+_
+/src/main/java/com/vishal/myscale/UserQuery.java,8\e\8e6ddf87f46d9053b59b100e67d7c4179e9825ee
+\
+,src/main/java/com/vishal/myscale/Recipe.java,6\6\664fa72ad3dc3c59b57a8b11f0f87055c8460bfe
