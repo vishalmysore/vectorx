@@ -2,24 +2,40 @@ package com.vishal.myscale;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 /**
  * This class is just for demo/poc in real world we will be using better connecting pool
  */
+
+@Configuration
+@Log
 public class MyScaleConnection {
-    private static MyScaleConnection myScaleConnection;
+    @Value("${clickhouse.url}")
+    private String jdbcUrl;
+
+    @Value("${clickhouse.username}")
+    private String username;
+
+    @Value("${clickhouse.password}")
+    private String password;
+    public MyScaleConnection() {
+
+    }
    private HikariDataSource dataSource;
+   @Autowired
 
     private void initDS() {
-        HikariConfig config = new HikariConfig();
-        config.setJdbcUrl("jdbc:clickhouse://msc-8cdd15a4.us-east-1.aws.myscale.com:443/default?ssl=true");
-        config.setUsername("vishalmysore_org_default");
-        config.setPassword(System.getenv("pass"));
+       HikariConfig config = new HikariConfig();
+       config.setJdbcUrl(jdbcUrl);
+       config.setUsername(username);
+       config.setPassword(password);
 
         // Set the maximum lifetime of a connection in the pool in milliseconds (e.g., 30 minutes)
         config.setMaxLifetime(1800000);
@@ -36,21 +52,15 @@ public class MyScaleConnection {
          dataSource = new HikariDataSource(config);
          // The HikariDataSource will automatically close idle connections after the specified timeout
     }
-    private MyScaleConnection() {
-        initDS();
-    }
 
-    public static MyScaleConnection getMyScaleConnection(){
-        if(myScaleConnection == null) {
-            myScaleConnection = new MyScaleConnection();
-        }
-        return myScaleConnection;
-    }
+
+
 
     public Connection getConnection() {
         try {
             return dataSource.getConnection();
         } catch (SQLException e) {
+            log.severe(e.getMessage());
             throw new RuntimeException(e);
         }
     }

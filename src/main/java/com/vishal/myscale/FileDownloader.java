@@ -1,28 +1,34 @@
 package com.vishal.myscale;
 
+import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+
 import java.io.BufferedInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+@Log
+@Configuration
 public class FileDownloader {
-    public static void main(String[] args) {
-        String fileURL = "https://huggingface.co/datasets/VishalMysore/newIndianCuisine/raw/main/train.csv";
+    @Value("${data.url}")
+    private String fileURL;
+
+    public void downloadFile()  {
         String saveDir = System.getProperty("user.dir"); ; // Replace with your directory
         String fileName = "train.csv";
-
+        URL url = null;
         try {
-            downloadFile(fileURL, saveDir, fileName);
-            System.out.println("File downloaded successfully!");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+            url = new URL(fileURL);
+        } catch (MalformedURLException e) {
+            log.severe(e.getMessage());
 
-    public static void downloadFile(String fileURL, String saveDir, String fileName) throws IOException {
-        URL url = new URL(fileURL);
+        }
         try (BufferedInputStream in = new BufferedInputStream(url.openStream());
              FileOutputStream fileOutputStream = new FileOutputStream(Paths.get(saveDir, fileName).toString())) {
 
@@ -31,6 +37,10 @@ public class FileDownloader {
             while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
                 fileOutputStream.write(dataBuffer, 0, bytesRead);
             }
+        } catch (FileNotFoundException e) {
+            log.severe(e.getMessage());
+        } catch (IOException e) {
+            log.severe(e.getMessage());
         }
     }
 }

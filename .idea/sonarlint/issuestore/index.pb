@@ -39,3 +39,11 @@ _
 /src/main/java/com/vishal/myscale/UserQuery.java,8\e\8e6ddf87f46d9053b59b100e67d7c4179e9825ee
 \
 ,src/main/java/com/vishal/myscale/Recipe.java,6\6\664fa72ad3dc3c59b57a8b11f0f87055c8460bfe
+\
+,src/main/java/com/vishal/myscale/Config.java,1\7\17a5cb7889079f4c1bc6fe71a8706a62e294e461
+b
+2src/main/java/com/vishal/myscale/VectorConfig.java,2\f\2f1e5989368aadf524a472c018111a4b8db9e104
+m
+=src/main/java/com/vishal/deperecated/MovieRecommendation.java,e\6\e6195f557c02a2d7805f3249ddc2de3fc35b47fb
+9
+	README.MD,9\6\968e80af9562e09cebe594968b130076952eafe1

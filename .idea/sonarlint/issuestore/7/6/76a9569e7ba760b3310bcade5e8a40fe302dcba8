@@ -1,18 +1,25 @@
 
 
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8³ºÁ‰…2J$83c511ca-18fa-4977-b728-cedf33d247d2
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8³ºÁ‰…2J$4f179504-030b-4a4d-a600-15c0fd204a28
+e
+java:S6355
+"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš8ö€ˆù…2
+R
+java:S1133"5Do not forget to remove this deprecated code someday.(ÉàÛä8÷€ˆù…2
+E
+java:S1123"(Add the missing @deprecated Javadoc tag.(ÉàÛä8ø€ˆù…2
 q
-java:S2115")Add password protection to this database.(Íºã øÿÿÿÿ8“¨º¦…2J$6532cb50-ce27-40ae-bf86-eb9d9ee1367d
-m	java:S106"+Replace this use of System.out by a logger.(†œø»8„¼Á‰…2J$d3e1bd5c-bc50-4cc3-88f8-dbec9d3009f2
-r	java:S106"+Replace this use of System.out by a logger.(¯”Áûşÿÿÿÿ8†¼Á‰…2J$dd4bafca-425a-4869-8213-d2b8b0a440f5
-r	java:S106"+Replace this use of System.out by a logger.(ĞÒâ¬úÿÿÿÿ8‡¼Á‰…2J$e679a82c-cdb0-4827-bd0c-fd5bfd51de43
-m	java:S106'"+Replace this use of System.out by a logger.(¾İ¡î8‰¼Á‰…2J$fde7446b-4da5-4e5c-909d-d1777f78d390
-r	java:S106."+Replace this use of System.out by a logger.(Ëù™ˆÿÿÿÿÿ8‹¼Á‰…2J$4a4324fd-117c-4092-b7f4-e7463db89fe8
-m	java:S1069"+Replace this use of System.out by a logger.(î²ÿ°8Œ¼Á‰…2J$70d0983c-0f6b-4a03-b48a-79c507c0da66
-m	java:S106?"+Replace this use of System.out by a logger.(©éî¾8¼Á‰…2J$1e37d1b7-3b6e-4009-857e-19f6e7224fe6
-r	java:S106W"+Replace this use of System.out by a logger.(É×¨°øÿÿÿÿ8¼Á‰…2J$6b7629a7-ac99-460b-8168-e408f9201737
-r	java:S106]"+Replace this use of System.out by a logger.(£èŸøÿÿÿÿ8’¼Á‰…2J$11b61ebe-6902-45ab-9b53-f4bc4e394a1b
+java:S2115")Add password protection to this database.(Íºã øÿÿÿÿ8“¨º¦…2J$31ac3aca-a2bb-468a-9edc-48a951483dbd
+m	java:S106"+Replace this use of System.out by a logger.(†œø»8„¼Á‰…2J$012e5e2a-7b94-47b5-9434-7b6fb61c2137
+r	java:S106"+Replace this use of System.out by a logger.(¯”Áûşÿÿÿÿ8†¼Á‰…2J$c1d7bca7-9e1f-4bea-a07c-8946e0663338
+r	java:S106 "+Replace this use of System.out by a logger.(ĞÒâ¬úÿÿÿÿ8‡¼Á‰…2J$a1ea8181-9dcc-4a40-8d80-c8e60f644542
+m	java:S106("+Replace this use of System.out by a logger.(¾İ¡î8‰¼Á‰…2J$6cdf8c87-0e73-4991-a21b-2c131107cd69
+r	java:S106/"+Replace this use of System.out by a logger.(Ëù™ˆÿÿÿÿÿ8‹¼Á‰…2J$5e58b677-41bf-4002-9cbe-2dcd923d767a
+m	java:S106:"+Replace this use of System.out by a logger.(î²ÿ°8Œ¼Á‰…2J$28c99089-e1ba-47c8-b1d5-8ca6093326a7
+m	java:S106@"+Replace this use of System.out by a logger.(©éî¾8¼Á‰…2J$2ee626ff-a923-45fb-a07c-6280f2b1f720
+r	java:S106X"+Replace this use of System.out by a logger.(É×¨°øÿÿÿÿ8¼Á‰…2J$0887f344-19cb-4398-b871-efed23e20a1d
+r	java:S106^"+Replace this use of System.out by a logger.(£èŸøÿÿÿÿ8’¼Á‰…2J$147491ff-e55e-46bc-8e3d-bead8a21165e
 u
-java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8¡¼Á‰…2J$810a1e2b-65b9-4985-be16-40a2bc442040
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8¡¼Á‰…2J$eea08835-ce3a-4822-a0ab-a2209917229e
 x
-java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8¢¼Á‰…2J$ff54a05d-44b3-4f8d-8741-45bf936cdf62
+java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8¢¼Á‰…2J$06c3ffeb-1e45-4cb6-a1bd-ece9eda0a4e7

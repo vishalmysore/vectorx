@@ -1,4 +1,4 @@
-package com.vishal.myscale;
+package com.vishal.deperecated;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,6 +7,7 @@ import java.sql.Statement;
 import java.util.Random;
 import org.json.JSONObject;
 
+@Deprecated
 public class MovieRecommendation {
 
     public static void main(String[] args) {

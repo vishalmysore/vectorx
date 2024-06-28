@@ -2,6 +2,9 @@ package com.vishal.myscale;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
+import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.io.BufferedWriter;
@@ -11,7 +14,17 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Arrays;
 
+@Service
+@Log
 public class MyScaleDataLoader {
+
+    @Autowired
+    private MyScaleConnection myScaleConnection;
+
+    public MyScaleDataLoader() {
+
+        log.info("Loader init");
+    }
 
     public  void createTable() {
 
@@ -31,7 +44,7 @@ public class MyScaleDataLoader {
                 ORDER BY id
                 """;
         Statement stmt = null;
-        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        Connection connection = myScaleConnection.getConnection();
         try {
             stmt = connection.createStatement();
         } catch (SQLException e) {
@@ -43,7 +56,7 @@ public class MyScaleDataLoader {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Table dropped successfully.");
+            log.info("Table dropped successfully.");
 
             // Execute the CREATE TABLE statement
             try {
@@ -51,7 +64,7 @@ public class MyScaleDataLoader {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Table created successfully.");
+            log.info("Table created successfully.");
 
     }
     public  void processRecords() {
@@ -76,7 +89,7 @@ public class MyScaleDataLoader {
                 VALUES (?, ?, ?, ?, ?, ?, ?)
                 """;
             long id = 1; // Starting id for records
-            Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+            Connection connection = myScaleConnection.getConnection();
             PreparedStatement pstmt = connection.prepareStatement(insertSQL);
             while ((columns = csvReader.readNext()) != null) {
                 // Process each line
@@ -106,17 +119,19 @@ public class MyScaleDataLoader {
                 }
             }
             pstmt.executeBatch();
-            System.out.println("File processed and saved successfully!");
+            log.info("File processed and saved successfully!");
 
         } catch (IOException | SQLException e) {
-            e.printStackTrace();
+            log.severe(e.getMessage());
+
         } catch (CsvValidationException e) {
+            log.severe(e.getMessage());
             throw new RuntimeException(e);
         }
     }
 
     public void createIndex() {
-        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        Connection connection = myScaleConnection.getConnection();
         String alterTableQuery = "ALTER TABLE default.myscale_cookgpt " +
                 "ADD VECTOR INDEX method_feature_index method_feature " +
                 "TYPE MSTG " +
@@ -124,14 +139,14 @@ public class MyScaleDataLoader {
 
         try (Statement stmt = connection.createStatement()) {
             stmt.execute(alterTableQuery);
-            System.out.println("Vector index added successfully.");
+            log.info("Vector index added successfully.");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     private void checkIndex() {
-        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        Connection connection = myScaleConnection.getConnection();
 
         String getIndexStatusQuery = "SELECT status FROM system.vector_indices WHERE name='method_feature_index'";
 
@@ -141,17 +156,18 @@ public class MyScaleDataLoader {
 
             if (rs.next()) {
                 String status = rs.getString("status");
-                System.out.println("Index build status: " + status);
+                log.info("Index build status: " + status);
 
                 if ("Built".equals(status)) {
-                    System.out.println("The vector index is built successfully.");
+                    log.info("The vector index is built successfully.");
                 } else {
-                    System.out.println("The vector index is not built yet. Current status: " + status);
+                    log.info("The vector index is not built yet. Current status: " + status);
                 }
             } else {
-                System.out.println("No vector index found with the name 'method_feature_index'.");
+                log.info("No vector index found with the name 'method_feature_index'.");
             }
         }catch(Exception e) {
+            log.severe(e.getMessage());
             throw new RuntimeException(e);
           }
 

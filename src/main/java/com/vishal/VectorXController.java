@@ -1,11 +1,15 @@
 package com.vishal;
+import com.vishal.myscale.FileDownloader;
+import com.vishal.myscale.MyScaleDataLoader;
 import com.vishal.myscale.MyScaleDataQuery;
 import com.vishal.myscale.Recipe;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import jakarta.annotation.PostConstruct;
 import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +23,23 @@ import java.util.List;
 @RequestMapping("/myscale")
 public class VectorXController {
 
-    private MyScaleDataQuery queryFinder = new MyScaleDataQuery();
+    @Autowired
+    private MyScaleDataLoader dataLoader;
+    @Autowired
+    FileDownloader fileDownloader;
+    public VectorXController() {
+
+    }
+    @PostConstruct
+    public void initData(){
+        fileDownloader.downloadFile();
+        dataLoader.createTable();
+        dataLoader.processRecords();
+        dataLoader.createIndex();
+
+    }
+    @Autowired
+    private MyScaleDataQuery queryFinder ;
     @Operation(summary = "Find recipes based on query",
             description = "Search for recipes based on a query string. This uses semantic search on embeddings " )
     @ApiResponse(responseCode = "200", description = "List of recipes found",

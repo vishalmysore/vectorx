@@ -1,14 +1,22 @@
 package com.vishal.myscale;
 
+import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+@Component
+@Log
 public class MyScaleDataQuery {
+    @Autowired
+    MyScaleConnection myScaleConnection;
     public List queryResult(String queryStr) {
-        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        Connection connection = myScaleConnection.getConnection();
         String query = "SELECT Recipe, Method, distance(method_feature, ?) as dist " +
                 "FROM default.myscale_cookgpt " +
                 "ORDER BY dist LIMIT ?";
@@ -31,17 +39,18 @@ public class MyScaleDataQuery {
 
                 // Print the summaries
                 for (String[] summary : summaries) {
-                    System.out.println("Recipe: " + summary[0] + ", Method: " + summary[1]);
+                    log.info("Recipe: " + summary[0] + ", Method: " + summary[1]);
                 }
                 return summaries;
             }
         } catch (SQLException e) {
+            log.severe(e.getMessage());
             throw new RuntimeException(e);
         }
     }
 
     public List queryData(String recipeName) {
-        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        Connection connection = myScaleConnection.getConnection();
         String query = "SELECT *  " +
                 "FROM default.myscale_cookgpt " +
                 "where Recipe = ?";
@@ -65,11 +74,12 @@ public class MyScaleDataQuery {
 
                 // Print the summaries
                 for (String[] summary : summaries) {
-                    System.out.println("Recipe: " + summary[0] + ", Method: " + summary[1]);
+                    log.info("Recipe: " + summary[0] + ", Method: " + summary[1]);
                 }
                 return summaries;
             }
         } catch (SQLException e) {
+            log.severe(e.getMessage());
             throw new RuntimeException(e);
         }
     }
@@ -82,7 +92,7 @@ public class MyScaleDataQuery {
                 """;
         Random random = new Random();
         long id = random.nextInt() ; // Starting id for records
-        Connection connection = MyScaleConnection.getMyScaleConnection().getConnection();
+        Connection connection = myScaleConnection.getConnection();
         try {
             PreparedStatement pstmt = connection.prepareStatement(insertSQL);
             pstmt.setLong(1, id);
@@ -94,8 +104,9 @@ public class MyScaleDataQuery {
             Float[] methodFeature = CreateEmbedding.embedAsObject(recipe.getMethod());
             pstmt.setArray(7, connection.createArrayOf("Float32",methodFeature));
             pstmt.executeUpdate();
-            System.out.println("Recipe inserted successfully!");
+            log.info("Recipe inserted successfully!");
         } catch (SQLException e) {
+            log.severe(e.getMessage());
             throw new RuntimeException(e);
         }
         return id;

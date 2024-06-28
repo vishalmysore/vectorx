@@ -1,0 +1,25 @@
+
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8³ºÁ‰…2J$e7c2a3b1-4ec1-4205-87e8-69614e0c493e
+‹
+java:S6355
+"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš8ö€ˆù…2J$18ec7877-4bfb-49ab-95a4-5cba8fd0cf2a
+x
+java:S1133"5Do not forget to remove this deprecated code someday.(ÉàÛä8÷€ˆù…2J$f9c4d30f-4196-4bbf-a6d1-7bec60d0164e
+k
+java:S1123"(Add the missing @deprecated Javadoc tag.(ÉàÛä8ø€ˆù…2J$80a55abe-2d83-4958-b5af-094686b074ef
+q
+java:S2115")Add password protection to this database.(Íºã øÿÿÿÿ8“¨º¦…2J$1ddc7985-5969-43f7-a4ed-3722a0f060ae
+m	java:S106"+Replace this use of System.out by a logger.(†œø»8„¼Á‰…2J$9f8d046b-db62-4864-b2eb-fe8f998aebed
+r	java:S106"+Replace this use of System.out by a logger.(¯”Áûşÿÿÿÿ8†¼Á‰…2J$fced8d8a-ba0b-40d9-a897-849b91e34ce2
+r	java:S106 "+Replace this use of System.out by a logger.(ĞÒâ¬úÿÿÿÿ8‡¼Á‰…2J$8c6744e0-4d1f-4a2e-b58a-6694891c6fca
+m	java:S106("+Replace this use of System.out by a logger.(¾İ¡î8‰¼Á‰…2J$9d21e6c0-0e6d-4a07-94e0-a6e8260d34fc
+r	java:S106/"+Replace this use of System.out by a logger.(Ëù™ˆÿÿÿÿÿ8‹¼Á‰…2J$9e5f7dc3-9a3d-4fc0-b49a-4f8d21ac9528
+m	java:S106:"+Replace this use of System.out by a logger.(î²ÿ°8Œ¼Á‰…2J$c68f894f-88cd-403b-8b63-207e997cab93
+m	java:S106@"+Replace this use of System.out by a logger.(©éî¾8¼Á‰…2J$ea48b67f-3edc-4d90-a327-c21e7b58ac71
+r	java:S106X"+Replace this use of System.out by a logger.(É×¨°øÿÿÿÿ8¼Á‰…2J$273fa833-b733-4aac-b3c5-73147cd6d78a
+r	java:S106^"+Replace this use of System.out by a logger.(£èŸøÿÿÿÿ8’¼Á‰…2J$f099d240-e4fd-4931-ab88-85e640c1fa88
+u
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8¡¼Á‰…2J$b0356d09-fae0-474b-b455-f9a74466f466
+x
+java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8¢¼Á‰…2J$51b0eae8-2064-4a0b-9dcd-4ea940577a2b

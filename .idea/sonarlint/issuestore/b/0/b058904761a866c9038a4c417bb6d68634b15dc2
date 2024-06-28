@@ -1,8 +1,4 @@
 
-	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ñğÑÑ…2J$4c916955-5055-45f2-bc2e-1179651b0b2d
-Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ñ‘‘×8€ñÑÑ…2J$655339d1-9d69-411c-88b5-b6a091bd5b98
-v
-java:S1128"3Remove this unused import 'java.sql.DriverManager'.(“£°8›ÎÒÑ…2J$a8cefa05-9b63-45a3-8294-3461e394bb9c
-r
-java:S1128	"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø8›ÎÒÑ…2J$1623b0f4-e8b7-4d16-b775-c97c73d6eb71
+	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8úÙ‚ß…2J$1098b8f1-ed42-4a9f-b89c-db9807caaf81
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿Á‚É8µ°Öø…2J$af47c598-a428-45b3-a947-d79b7f4c52a5

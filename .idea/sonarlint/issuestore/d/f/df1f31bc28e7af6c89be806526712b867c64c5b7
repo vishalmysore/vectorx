@@ -1,5 +1,7 @@
 
-f
-java:S1128"Remove this duplicated import.(¯ìÙÿÿÿÿÿ8¨ÛÚÒ…2J$f71b0011-fab8-455e-8f17-3f7f12a848db
-a
-java:S1128"Remove this duplicated import.(Ë”ÖÏ8©ÛÚÒ…2J$a23870dc-39c4-4a7e-bad3-3afdf62ffa02
+„
+java:S1128"ARemove this unused import 'com.vishal.myscale.MyScaleDataLoader'.(éÿâ8ãÉ‡ø…2J$25ce1484-08b0-483a-a384-f9dd6b3da9ed
+
+java:S1128"KRemove this unused import 'org.springframework.context.ApplicationContext'.(»Ô»¿8ìÉ‡ø…2J$1e4391c4-28dc-4c8f-86f7-49c23b7d5b6c
+¨
+java:S1128"fRemove this unused import 'org.springframework.context.annotation.AnnotationConfigApplicationContext'.(€¡¹;8ìÉ‡ø…2J$443acb0e-a430-4d43-b9a3-e53a3034e0b8

@@ -1,8 +1,5 @@
 
 d
-java:S1116"Remove this empty statement.(â§µÛûÿÿÿÿ8´øö¦…2J$720a3a23-4869-4269-a662-8394da501841
-r	java:S106"+Replace this use of System.out by a logger.(ö‰ˆıÿÿÿÿ8Ôºô¦…2J$2a248f4c-7035-463a-9834-8359563f0363
+java:S1116"Remove this empty statement.(â§µÛûÿÿÿÿ8Áİüø…2J$4292c7d9-bbbb-4222-abf3-ba8df5899359
 m
-java:S1197"*Move the array designators [] to the type.(¸ı‹ê8•»ô¦…2J$9239de5c-1390-4313-8277-f5d4eed60197
-s
-java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8¦»ô¦…2J$74158f8d-27fa-43da-8fc1-c3c5190fa3fb
+java:S1197#"*Move the array designators [] to the type.(¸ı‹ê8´ûûø…2J$0c1a44d1-cf45-4e69-83c4-3e94a3ca8d43
